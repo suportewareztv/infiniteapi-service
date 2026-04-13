@@ -1,0 +1,24 @@
+{
+  "name": "infiniteapi-microservice",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Microserviço REST compatível com Evolution API usando InfiniteAPI (Baileys fork)",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "baileys": "github:rsalcara/InfiniteAPI",
+    "express": "^4.21.0",
+    "qrcode": "^1.5.4",
+    "pino": "^9.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "@types/qrcode": "^1.5.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}
